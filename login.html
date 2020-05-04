@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign IN/Sign Up</title>
+    <script src="https://kit.fontawesome.com/a6daa98d17.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <div class="index">
+      <div class="form-box">
+
+        <div class="btn-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="signIn()">Sign In</button>
+          <button type="button" class="toggle-btn" onclick="signUp()">Sign Up</button>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+          <a href="#"><i class="fab fa-google fa-3x"></i></a>
+        </div>
+
+        <form id="sign-in" class="inp-grp">
+          <input type="text" class="inp-field" placeholder="User Id" required>
+          <input type="password" class="inp-field" placeholder="Password" required>
+          <input type="checkbox" class="check-bx"><span>Remember Me</span>
+          <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+        <form id="register" class="inp-grp">
+          <input type="text" class="inp-field" placeholder="User Id" required>
+          <input type="email" class="inp-field" placeholder="Email" required>
+          <input type="password" class="inp-field" placeholder="Password" required>
+          <input type="checkbox" class="check-bx"><span>Remember Me</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+      </div>
+    </div>
+
+<script>
+  var x = document.getElementById("sign-in");
+  var y = document.getElementById("register");
+  var z = document.getElementById("btn");
+
+  function signUp(){
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "110px";
+
+  }
+  function signIn(){
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0";
+
+  }
+</script>
+
+  </body>
+</html>
